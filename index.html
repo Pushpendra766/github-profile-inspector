@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Repositories</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="website-header">
+      <h4><i class="fab fa-github"></i> Github Profile Inspector</h4>
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="username">Username</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            id="username"
+            placeholder="Enter username"
+          />
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary mb-2" id="get_info_btn">
+            Get Info
+          </button>
+        </div>
+        <p class="error-message hide">
+          <i class="fas fa-exclamation-triangle"></i> user name is not valid
+        </p>
+      </div>
+    </div>
+    <div class="profile-header-container hide" id="profile-header-container">
+      <div class="profile-info-container">
+        <div class="profile-photo-container">
+          <img
+            id="profile_photo"
+            src="https://avatars.githubusercontent.com/u/56391001?v=4"
+            alt=""
+          />
+        </div>
+        <div>
+          <!-- User Profile Information -->
+          <h4 id="user_name">Pushpendra Chandravanshi</h4>
+          <p id="user_bio">
+            <!-- Icon: Info Circle -->
+            <i class="fas fa-info-circle"></i> GSoC'23 @scorelab | SIH'23 Winner
+            🏆 | Frontend Developer
+          </p>
+          <p id="user_adderes">
+            <i class="fas fa-map-marker-alt"></i> Bhopal, Madhya Pradesh, India
+          </p>
+          <p>
+            Twitter
+            <a id="user_twitter_url" href="https://twitter.com/__pushpendra__">
+              https://twitter.com/__pushpendra__
+            </a>
+          </p>
+          <p>
+            <a id="user_github" href="https://github.com/Pushpendra766">
+              <!-- Icon: GitHub -->
+              <i class="fab fa-github"></i> https://github.com/Pushpendra766
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content Body -->
+    <div class="main-body-content">
+      <!-- Profile Header Container -->
+
+      <!-- Repositories Container -->
+      <div>
+        <div class="repositories-container"></div>
+      </div>
+
+      <!-- Pagination Section -->
+      <div id="pagination">
+        <button class="prev-btn nav-btn hide">Prev</button>
+        <div class="page-btns" id="page-btns"></div>
+        <button class="next-btn nav-btn hide">Next</button>
+      </div>
+
+      <!-- Dropdown for Result per Page -->
+      <div class="dropdown">
+        <div class="dropdown-menu">
+          <!-- Dropdown Items with Result per Page Options -->
+          <a href="#" class="dropdown-item">10</a>
+          <a href="#" class="dropdown-item">20</a>
+          <a href="#" class="dropdown-item">50</a>
+          <a href="#" class="dropdown-item">100</a>
+        </div>
+        <!-- Button to Trigger Dropdown -->
+        <button class="dropdown-btn">
+          <!-- Icon: List -->
+          Result per page : 10
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
