@@ -2,7 +2,7 @@
 
 This is a webapp that can be used to view any user on Github and see his public repositories.
 
-Live Preview - [Netlify Deploy](https://zepto766.netlify.app/)
+Live Preview - [Netlify Deploy](https://fyle766.netlify.app/)
 
 ## Setup Instructions
 
